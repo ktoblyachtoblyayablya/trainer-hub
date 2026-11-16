@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тренажёры по дисциплинам</title>
+  <meta name="description" content="Коллекция тренажёров по дисциплинам кафедры вычислительной техники ИКИТ СФУ" />
+  <meta name="author" content="Пантелеев Г.Д." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="assets/logo.svg" alt="" class="hero__logo" />
+    <h1 class="hero__title">Тренажёры по дисциплинам</h1>
+    <p class="hero__subtitle">
+      Тренажёры по дисциплинам кафедры вычислительной техники ИКИТ СФУ.
+      Выбирайте нужный — и вперёд страдать, если там есть СхемТех и/или ПТЦА, знайте, это написал не я.
+    </p>
+  </header>
+
+  <main>
+    <div class="search-bar">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Поиск тренажёра…"
+        aria-label="Поиск тренажёра"
+      />
+    </div>
+
+    <section class="grid" id="trainers-grid"></section>
+
+    <p class="empty-state" id="empty-state" hidden>
+      Ничего не найдено 🤷
+    </p>
+  </main>
+
+  <footer class="footer">
+    <p>
+      © 2026 Пантелеев Г.Д. ·
+      <a href="https://github.com/ktoblyachtoblyayablya/trainer-hub/blob/main/LICENSE">
+        GPL-3.0-or-later
+      </a>
+      ·
+      <a href="https://github.com/ktoblyachtoblyayablya">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="js/trainers.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
